@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 31 Ara 2022, 06:29:38
+-- Üretim Zamanı: 31 Ara 2022, 06:44:38
 -- Sunucu sürümü: 10.4.21-MariaDB
 -- PHP Sürümü: 8.0.12
 
@@ -60,7 +60,7 @@ CREATE TABLE `todos` (
   `created_date` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_date` timestamp NOT NULL DEFAULT current_timestamp(),
   `progress` tinyint(4) DEFAULT NULL,
-  `status` enum('a','p') NOT NULL
+  `status` enum('a','p','s') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
